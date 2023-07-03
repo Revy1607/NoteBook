@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.insertNote.InsertNoteFragment"
+        android:background="@drawable/background">
+
+        <com.phoint.notebook.ui.widget.ActionBarViewBinding
+            android:id="@+id/abvNote"
+            app:action_bar_enable_src_right="true"
+            app:action_bar_enable_src_left="true"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:action_bar_title="New notebook"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:elevation="24dp"
+            android:id="@+id/edtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/background"
+            android:hint="Title"
+            android:padding="30dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDateTime" />
+
+        <EditText
+            android:id="@+id/edtNoteTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/background"
+            android:elevation="14dp"
+            android:gravity="left"
+            android:hint="\t..."
+            android:paddingBottom="200dp"
+            android:textColor="@color/white"
+            android:textColorHint="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtTitle" />
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            tools:text="Time"
+            android:textColor="#5C5C5C"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abvNote" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

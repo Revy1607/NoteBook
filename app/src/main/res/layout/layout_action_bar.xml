@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@drawable/shape_action_bar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="Note Tasks"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="@font/manropefont"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:padding="18dp"
+                android:src="@drawable/ic_back" />
+
+            <ImageView
+                android:id="@+id/imgRight"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentRight="true"
+                android:padding="18dp"
+                android:src="@drawable/ic_done" />
+</RelativeLayout>
